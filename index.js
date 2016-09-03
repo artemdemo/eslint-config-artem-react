@@ -2,8 +2,14 @@
 
 const artemConfig = require('eslint-config-artem');
 
+const plugins = Array.isArray(artemConfig.plugins) ? artemConfig.plugins : [];
+
 const config = {
     "extends": "airbnb",
+    "plugins": plugins.concat([
+        "react",
+        "jsx-a11y",
+    ]),
     "rules": Object.assign(artemConfig.rules, {
         "react/prop-types": 0,
         "react/jsx-indent": ["error", 4],
