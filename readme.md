@@ -13,5 +13,5 @@ In order to use it just add file `.eslintrc` to the root folder of your project:
 Also install `esilnt`
 
 ```
-& npm i eslint --save-dev
+$ npm i eslint --save-dev
 ```
