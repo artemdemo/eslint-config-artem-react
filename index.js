@@ -11,6 +11,9 @@ const config = {
         "jsx-a11y",
     ]),
     "rules": Object.assign(artemConfig.rules, {
+        // Warning if class method is used without `this`
+        // Exception is `render()` method case I have to use it anyways in React
+        "class-methods-use-this": ["warn", { "exceptMethods": ["render"] }],
         "react/prop-types": 0,
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": 0,
