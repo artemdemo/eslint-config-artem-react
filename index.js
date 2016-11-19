@@ -14,6 +14,11 @@ const config = {
         // Warning if class method is used without `this`
         // Exception is `render()` method case I have to use it anyways in React
         "class-methods-use-this": ["warn", { "exceptMethods": ["render"] }],
+        "jsx-quotes": ["error", "prefer-single"],
+
+        /**
+         * react
+         */
         "react/prop-types": 0,
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": 0,
@@ -23,7 +28,15 @@ const config = {
         "react/no-did-mount-set-state": 0,
         "react/jsx-pascal-case": 0,
         "react/jsx-no-bind": 0,
-        "jsx-quotes": ["error", "prefer-single"]
+
+        /**
+         * jsx-a11y
+         */
+        // Sure it feels better to use <button> tag when you need to attach click event
+        // But what you'll do when you want to listen to click event on <tr>?
+        "jsx-a11y/no-static-element-interactions": "warn",
+        // This error doesn't make sense when I'm using <input> inside of <label>
+        "jsx-a11y/label-has-for": "warn"
     }),
 }
 
