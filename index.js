@@ -29,6 +29,13 @@ const config = {
         "react/jsx-closing-bracket-location": 0,
         "react/no-did-mount-set-state": 0,
         "react/jsx-no-bind": 0,
+        // Enforce to use default properties
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
+        "react/require-default-props": ["warn"],
+        // It's wrong to use pure index as key, but it's okey to wrap it in unique string
+        // like ths: `unique-key-${key}`
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
+        "react/no-array-index-key": ["warn"],
 
         /**
          * import
