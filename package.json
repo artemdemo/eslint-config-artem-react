@@ -7,7 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-artem": "git+https://github.com/artemdemo/eslint-config-artem.git#3.0.0"
+    "eslint-config-artem": "git+https://github.com/artemdemo/eslint-config-artem.git#3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   },
   "repository": {
     "type": "git",
@@ -19,11 +24,5 @@
     "url": "https://github.com/artemdemo/eslint-config-artem-react/issues"
   },
   "homepage": "https://github.com/artemdemo/eslint-config-artem-react#readme",
-  "devDependencies": {
-    "eslint": "^4.10.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0"
-  }
+  "devDependencies": {}
 }
