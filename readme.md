@@ -15,3 +15,17 @@ Also install `esilnt`
 ```
 $ npm i eslint --save-dev
 ```
+
+## Experimental features
+In order to use new language features (like dynamic `import()`) you will need to use different parser: `babel-parser`
+
+```
+$ npm install --save-dev babel-parser
+```
+
+```
+{
+    "extends": "artem-react",
+    "parser": "babel-eslint"
+}
+```
