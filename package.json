@@ -1,16 +1,13 @@
 {
   "name": "eslint-config-artem-react",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "eslint config for react app, based on airbnb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-config-artem": "git+https://github.com/artemdemo/eslint-config-artem.git#2.1.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-config-artem": "git+https://github.com/artemdemo/eslint-config-artem.git#3.0.0"
   },
   "repository": {
     "type": "git",
@@ -21,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/artemdemo/eslint-config-artem-react/issues"
   },
-  "homepage": "https://github.com/artemdemo/eslint-config-artem-react#readme"
+  "homepage": "https://github.com/artemdemo/eslint-config-artem-react#readme",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  }
 }
