@@ -53,7 +53,16 @@ const config = {
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
         "jsx-a11y/no-static-element-interactions": "warn",
         // This error doesn't make sense when I'm using <input> inside of <label>
-        "jsx-a11y/label-has-for": "warn"
+        "jsx-a11y/label-has-for": "warn",
+        // We allowing to use "onClick" events on various elements
+        // like "div", "span", etc
+        "jsx-a11y/click-events-have-key-events": ["warn"],
+        // Check valid "href" attributes on "a" tag.
+        // But do not use it in "Link" components.
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "specialLink": [ "hrefLeft", "hrefRight" ],
+            "aspects": [ "noHref", "invalidHref", "preferButton" ]
+        }]
     }),
 }
 
