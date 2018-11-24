@@ -16,6 +16,14 @@ Also install `esilnt`
 $ npm i eslint --save-dev
 ```
 
+## How correctly upgrade those configs
+
+*Notice*, this project does not uses `yarn.lock` since in order to correctly update it we need to run specific command,
+that will rely on `npm-lock`.
+
+In order to upgrade them you will need to use specific versions of each dependency.
+See [airbnb package page](https://www.npmjs.com/package/eslint-config-airbnb) for more information.
+
 ## Experimental features
 In order to use new language features (like dynamic `import()`) you will need to use different parser: `babel-parser`
 
