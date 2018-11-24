@@ -23,17 +23,3 @@ that will rely on `npm-lock`.
 
 In order to upgrade them you will need to use specific versions of each dependency.
 See [airbnb package page](https://www.npmjs.com/package/eslint-config-airbnb) for more information.
-
-## Experimental features
-In order to use new language features (like dynamic `import()`) you will need to use different parser: `babel-parser`
-
-```
-$ npm install --save-dev babel-parser
-```
-
-```
-{
-    "extends": "artem-react",
-    "parser": "babel-eslint"
-}
-```
